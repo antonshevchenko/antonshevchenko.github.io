@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link href="/public/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <!-- header -->
+        <header>
+            {% include header.html %}
+        </header>
+
+        <div class="container">
+            {{ content }}
+        </div>
+
+        <!-- footer -->
+        <footer>
+            {% include footer.html %}
+        </footer>
+    </div>
+
+    <!-- scripts -->
+    <script src="/public/js/main.js"></script>
+</body>
+</html>

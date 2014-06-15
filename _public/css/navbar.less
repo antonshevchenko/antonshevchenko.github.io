@@ -1,0 +1,73 @@
+.navbar {
+    z-index: 1;
+}
+
+.navbar-transparent {
+    &:extend(.text-lowercase);
+
+    // Increase font size
+    font-size: @text-nav;
+
+    // Remove container padding
+    .container,
+    .container-fluid {
+        padding: 0;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    // Remove background on hover
+    .nav > li > a:hover {
+        background-color: transparent;
+    }
+
+    // Active links
+    .active u {
+        border-bottom: 2px solid;
+    }
+
+    .icon-bar {
+        background-color: @gray-dark;
+    }
+}
+
+.navbar-top {
+    position: absolute;
+    width: 100%;
+}
+
+.navbar-invert {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .nav.navbar-nav {
+        text-align: center;
+        background-color: white;
+
+        li {
+            text-transform: uppercase;
+            font-weight: 400;            
+            font-size: @text-lead;
+            letter-spacing: 2px;
+        }
+    }
+
+    .navbar-invert {
+        color: initial;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+    }
+
+    .navbar-header {
+        margin: 0 !important;
+
+        .navbar-toggle {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+---
+title: Anton Shevchenko
+layout: default
+---
+<div class="jumbotron jumbotron-transparent margin-top-navbar">
+    <h1 class="title">an+on</h1>
+</div>
+
+<!-- posts -->
+<div>
+    {% for post in site.posts limit: 10 %}
+    <article class="post">
+        <header>
+            <a title="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a>
+        </header>
+        {{ post.excerpt }} 
+        <a title="{{ post.title }}" href="{{ post.url }}">Read more &rarr;</a>
+    </article>
+    {% endfor %}
+</div>

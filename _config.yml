@@ -1,0 +1,3 @@
+excerpt_separator: <!--excerpt-->
+permalink: /post/:title
+markdown: redcarpet

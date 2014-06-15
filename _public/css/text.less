@@ -1,0 +1,73 @@
+// Classes
+// -------------------
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-slim {
+    font-weight: 300;
+}
+
+.text-one-line {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+fieldset.text-hr {
+    height: 70px;
+    border-top: 1px solid;
+    text-align: center;
+
+    legend {
+        color: inherit;
+        width: initial;
+        border-bottom: 0;
+        padding: 5px 10px;
+    }
+}
+
+.title {
+    font-size: @text-title;
+    line-height: 1em;
+}
+
+.lead {
+    &:extend(.text-uppercase);
+    &:extend(.text-slim);
+    color: @gray-light;
+    font-size: @text-lead;
+    letter-spacing: 2px;
+
+    &.lead-md {
+        font-size: @text-nav;
+    }
+}
+
+.details {
+    display: inline-block;
+    border: 1px solid;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0 7px;
+}
+
+// Tags
+// -------------------
+u {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    @text-title: 36px;
+
+    .title {
+        font-size: @text-title;
+        line-height: 1.2em;
+    }
+}

@@ -1,0 +1,50 @@
+.jumbotron-transparent {
+    width: 100%;
+    padding-top: 0;
+    background-color: transparent;
+
+    .title {
+        &:extend(.text-center);
+        font-size: @text-title + 35px;
+        line-height: 0.8em;
+        cursor: default;
+    }
+}
+
+.container .jumbotron-right,
+.jumbotron-right {
+	padding-right: 0;
+
+	.title {
+		text-align: right;
+	}
+}
+
+@media (max-width: 767px) {
+    @text-title: 10px;
+
+    .jumbotron {
+        padding: 0;
+        margin: 0;
+        margin-bottom: @margin * 2;
+
+        &.white {
+            color: @gray-dark;
+
+            &:hover {
+                color: inherit;
+            }
+        }
+
+        .title {
+            font-size: @text-title + 35px;
+        }
+    }
+
+    .container .jumbotron-center-xs,
+    .jumbotron-center-xs {
+        .title {
+            text-align: center;
+        }
+    }
+}

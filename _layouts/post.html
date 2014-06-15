@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<article class="post margin-top-navbar">
+    <div class="background-container">
+        <div class="background" style="background-image: url('{{ page.cover }}');"></div>
+    </div>
+
+    <header class="title">
+        {{ page.title }}
+    </header>
+    {{ content }}
+
+    <section class="info text-right">
+        <span>Posted on {{ page.date | date_to_string }}</span>
+        <span>
+            {% for tag in page.tags %}
+                <a class="tag" href="">#{{ tag }}</a>
+            {% endfor %}
+        </span>
+    </section>
+</article>
+
+{% unless site.related_posts.size == 0 %}
+<hr>
+
+<!-- related posts -->
+<div>
+    <p class="lead">You Might Also Like...</p>
+
+    <div>
+        {% for post in site.related_posts limit: 2 %}
+            <a class="block" href="{{ post.url }}">
+                <article class="col-md-6 related-post" style="background-image: url('{{ post.cover }}');">
+                    <div class="overlay">
+                        <header vertical-center>
+                            {{ post.title }}
+                        </header>
+                    </div>                    
+                </article>
+            </a>
+        {% endfor %}
+    </div>
+</div>
+{% endunless %}

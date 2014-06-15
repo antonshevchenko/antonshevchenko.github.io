@@ -1,0 +1,40 @@
+.section {
+    height: 400px;
+
+    .section-content {
+        position: relative;
+        height: inherit;
+    }
+}
+
+.full-section {
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+    .section {
+        width: inherit;
+        height: auto;
+    }
+
+    .section-content {
+        &:extend(.container);
+        &:extend(.padding);
+    }
+
+    &.section-striped {
+        .section:nth-of-type(odd) {
+            background-color: @gray-lighter;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        height: auto;
+
+        .jumbotron {
+            position: static !important;
+        }
+    }
+}

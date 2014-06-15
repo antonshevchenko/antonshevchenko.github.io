@@ -1,0 +1,35 @@
+// Margin
+.no-margin {
+    margin: 0 !important;
+}
+
+.margin-top {
+    margin-top: @margin;
+}
+
+.margin-bottom {
+    margin-bottom: @margin;
+}
+
+.margin-top-navbar {
+	margin-top: 85px;
+}
+
+// Padding
+.no-padding {
+	padding: 0 !important;
+}
+
+.padding {
+    padding: @padding;
+}
+
+@media (max-width: 767px) {
+	body > div > .container > *:first-child {
+		margin-top: 52px;		
+	}
+
+	.margin-top-navbar {
+		margin-top: 52px;		
+	}
+}

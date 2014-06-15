@@ -1,0 +1,41 @@
+.background {
+    position: absolute;    
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+    &.background-top {
+        background-position: top;
+    }
+
+    &.background-bottom {
+        background-position: bottom;
+    }
+
+    &.background-35 {
+        background-position: center 35%;
+    }
+
+    &.background-80 {
+        background-position: center 80%;
+    }
+}
+
+.background-container {
+    height: 200px;
+    margin-top: -@margin;
+    margin-bottom: @margin * 2;      
+}
+
+@media (max-width: 767px) {
+    @margin: 20px;
+
+    .background-container {
+        height: 60px;
+        margin-top: 0;
+        margin-bottom: @margin;
+    }
+}
