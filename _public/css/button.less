@@ -1,0 +1,33 @@
+.button {
+    &:extend(.lead);
+    &:extend(.text-center);
+    padding: 15px 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: @gray-light;
+
+    &.button-bg {
+        padding: 30px;
+    }
+
+    &.button-outline {
+        background-color: transparent;
+    }
+
+    &:hover {
+        color: inherit;
+    }
+
+    &:active {
+        color: white;
+        background-color: @gray-light;
+    }
+}
+
+@media (max-width: 767px) {
+    .button {
+        &.button-bg {
+            padding: 15px;
+        }
+    }
+}

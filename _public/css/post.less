@@ -1,0 +1,110 @@
+.post {
+    &:extend(.text-slim);
+    width: 100%;
+    margin-top: 45px;
+    font-size: @text-post;    
+    font-weight: 300;
+    line-height: 145%;
+
+    h1, h2, h3, h4, h5, h6 {
+        &:extend(.text-uppercase);
+        margin: @margin 0;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    header {        
+        font-weight: 400;
+        margin-bottom: @margin;
+
+        a {            
+            &:extend(.lead);
+            color: inherit;            
+            font-size: inherit;            
+            padding: 5px 10px;
+            border: 2px solid;
+        }
+    }
+
+    ul li a {
+        border-bottom: 0;
+    }
+
+    .info {
+        font-size: @text-small;
+
+        > span+span:before {
+            content: ' | ';
+        }
+
+        a {
+            border-bottom: 0;
+        }
+    }
+
+    .tag+.tag:before {
+        content: ', ';
+    }
+}
+
+.related-post {    
+    height: 150px;
+    overflow: hidden;
+    padding: 0;
+
+    // Background image
+    background-size: cover;
+    background-position: center;
+
+    .overlay {
+        position: relative;
+        width: 100%;
+        height: inherit;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        // Transition
+        -webkit-transition: background-color 0.3s ease;
+        -moz-transition: background-color 0.3s ease;
+        -o-transition: background-color 0.3s ease;
+        -ms-transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.2);            
+        }
+
+        header {
+            padding: 25px;
+        }
+    }
+
+    header {        
+        &:extend(.lead);
+        &:extend(.white);
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    @text-post: 18px;
+    @margin: 10px;
+
+    .post {
+        margin-top: @margin;
+        font-size: @text-post;
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: @margin 0;
+        }
+
+        header {
+            margin-bottom: @margin;
+
+            a {
+                padding: 0;
+                border: 0;
+                border-bottom: 1px solid;
+            }
+        }
+    }
+}

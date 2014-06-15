@@ -1,0 +1,26 @@
+{
+    "app": {
+        "css": [
+            "_public/css/**/*.css"
+        ],
+        "less": [
+            "_public/css/**/*.less"
+        ],
+        "js": [
+            "_public/js/*.js"
+        ]
+    },
+    "vendor": {
+        "css": [
+            "_public/vendor/highlight/styles/monokai_sublime.css"
+        ],
+        "js": [
+            "_public/vendor/jquery/dist/jquery.js",
+            "_public/vendor/bootstrap/dist/js/bootstrap.js",
+            "_public/vendor/highlight/highlight.pack.js"            
+        ],
+        "fonts": [
+            "_public/vendor/font-awesome/fonts/*"
+        ]
+    }
+}
