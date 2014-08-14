@@ -7524,6 +7524,7 @@ u {
   left: 0;
   width: 100%;
   height: inherit;
+  background-color: #428bca;
   background-size: cover;
   background-position: center;
   z-index: -1;
