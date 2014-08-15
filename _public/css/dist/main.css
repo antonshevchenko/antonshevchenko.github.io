@@ -7656,6 +7656,13 @@ u {
     border: 0;
     border-bottom: 1px solid;
   }
+  .post header a.header-mobile {
+    display: block;
+    padding: 5px 9px;
+    margin: 0;
+    border: 1px solid;
+    text-align: center;
+  }
 }
 .white,
 .white:hover,
