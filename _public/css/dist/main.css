@@ -7460,7 +7460,7 @@ u {
 @media (max-width: 767px) {
   .nav.navbar-nav {
     text-align: center;
-    background-color: white;
+    background-color: #f8f8f8;
   }
   .nav.navbar-nav li {
     text-transform: uppercase;
@@ -7468,11 +7468,15 @@ u {
     font-size: 14px;
     letter-spacing: 2px;
   }
+  .nav.navbar-nav li.active u {
+    border: 0;
+    font-weight: bold;
+  }
   .navbar-invert {
     color: initial;
   }
   .navbar-collapse {
-    background-color: white;
+    background-color: #f8f8f8;
   }
   .navbar-header {
     margin: 0 !important;

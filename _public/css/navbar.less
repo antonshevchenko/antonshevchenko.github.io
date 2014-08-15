@@ -43,15 +43,24 @@
 }
 
 @media (max-width: 767px) {
+    @navbar-mobile-color: #f8f8f8;
+
     .nav.navbar-nav {
         text-align: center;
-        background-color: white;
+        background-color: @navbar-mobile-color;
 
         li {
             text-transform: uppercase;
-            font-weight: 400;            
+            font-weight: 400;
             font-size: @text-lead;
             letter-spacing: 2px;
+        }
+
+        li.active {
+          u {
+            border: 0;
+            font-weight: bold;
+          }
         }
     }
 
@@ -60,7 +69,7 @@
     }
 
     .navbar-collapse {
-        background-color: white;
+        background-color: @navbar-mobile-color;
     }
 
     .navbar-header {
