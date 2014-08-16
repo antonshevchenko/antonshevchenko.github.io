@@ -7484,6 +7484,13 @@ u {
   .navbar-header .navbar-toggle {
     margin-right: 0;
   }
+  .no-transition {
+    -webkit-transition: height 0s;
+    -moz-transition: height 0s;
+    -ms-transition: height 0s;
+    -o-transition: height 0s;
+    transition: height 0s;
+  }
 }
 .jumbotron-transparent {
   width: 100%;
