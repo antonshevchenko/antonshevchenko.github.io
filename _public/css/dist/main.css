@@ -7355,6 +7355,9 @@ button.close {
 .fa-bomb:before {
   content: "\f1e2";
 }
+.font-inherit {
+  font-family: inherit !important;
+}
 .text-uppercase,
 .lead,
 .post h1,
