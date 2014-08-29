@@ -7471,8 +7471,7 @@ u {
     font-size: 14px;
     letter-spacing: 2px;
   }
-  .nav.navbar-nav li.active u {
-    border: 0;
+  .nav.navbar-nav li.active {
     font-weight: bold;
   }
   .navbar-invert {
@@ -7551,6 +7550,9 @@ u {
 }
 .background.background-35 {
   background-position: center 35%;
+}
+.background.background-65 {
+  background-position: center 65%;
 }
 .background.background-80 {
   background-position: center 80%;
