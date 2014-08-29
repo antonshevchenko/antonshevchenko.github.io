@@ -2,19 +2,80 @@
 title: Anton Shevchenko
 layout: default
 ---
-<div class="jumbotron jumbotron-transparent margin-top-navbar">
-    <h1 class="title">an+on</h1>
+<div class="section" navbar-invert>
+    <div class="background background-80 hidden-xs" style="background-image: url('http://distilleryimage7.ak.instagram.com/577a1c16bbf711e2943422000a9f1416_7.jpg');"></div>
+    <div class="background-container visible-xs">
+      <div class="background background-80" style="background-image: url('http://distilleryimage7.ak.instagram.com/577a1c16bbf711e2943422000a9f1416_7.jpg');"></div>
+    </div>
+    <div class="section-content">
+        <div class="jumbotron jumbotron-transparent jumbotron-right jumbotron-center-xs white no-padding invisible" vertical-center>
+            <h1 class="title no-margin">anton<br/>shevchenko</h1>
+        </div>
+    </div>
 </div>
 
-<!-- posts -->
-<div>
-    {% for post in site.posts limit: 10 %}
-    <article class="post">
-        <header>
-            <a title="{{ post.title }}" href="{{ post.url }}" class="header-mobile">{{ post.title }}</a>
-        </header>
-        {{ post.excerpt }}
-        <a title="{{ post.title }}" href="{{ post.url }}">Read more &rarr;</a>
-    </article>
-    {% endfor %}
+<div class="post margin-bottom">
+    <h4>What Makes Me Tick</h4>
+    <p>I run on pizza, apple juice and hip hop. Occasionally, I like to take <a title="Instagram" href="http://www.instagram.com/soupchik">square pictures.</a> Most of all, I enjoy doing things that are meaningful and enrich people's lives.</p>
+
+    <h4>Schooling</h4>
+    <p>Having graduated from <a title="Dawson College" href="http://www.dawsoncollege.qc.ca">Dawson College</a> in 2014 with a Computer Science degree, I'm now pursuing a Bachelor of Computer Science at the <a title="University of Waterloo" href="http://www.uwaterloo.ca">University of Waterloo.</a></p>
+
+    <div class="margin-top">
+        <a class="button button-bg button-outline center-block" href="/public/files/anton-shevchenko-resume.pdf" target="_blank">
+            Get My Resume
+        </a>
+    </div>
+
+    <h4>Programming Polyglot</h4>
+    <p>A genuine passion for the art of coding has pushed me to self-teach many programming concepts and languages on top of what traditional education had to offer. The following is a summary of my technical knowledge.</p>
+
+    <div class="row margin-top">
+        <div class="col-sm-6">
+            <dl class="lead">Web Development</dl>
+            <dd class="lead default">AngularJS, NodeJS, jQuery, Zend Framework 2, Doctrine 2, Ionic Framework</dd>
+        </div>
+        <div class="col-sm-6">
+            <dl class="lead">Tools</dl>
+            <dd class="lead default">GruntJS, BowerJS, NPM, Terminal, Sublime Text 2, Ngrok, MAMP, PhpMyAdmin, Xcode, GIMP, Photoshop</dd>
+        </div>
+        <div class="col-sm-6">
+            <dl class="lead">Programming Languages</dl>
+            <dd class="lead default">HTML, CSS, JavaScript, JSON, XML, PHP, Java, Visual Basic .NET, C#, Bash</dd>
+        </div>
+        <div class="col-sm-6">
+            <dl class="lead">Databases</dl>
+            <dd class="lead default">SQL (Oracle Express), MySQL, PostgreSQL, ORM, Access</dd>
+        </div>
+    </div>
+</div>
+
+<!-- contact -->
+<div class="section">
+    <div class="background hidden-xs" style="background-image: url('http://distilleryimage4.ak.instagram.com/28081284084c11e387e522000a1fbae1_7.jpg');"></div>
+    <div class="background-container visible-xs">
+      <div class="background" style="background-image: url('http://distilleryimage4.ak.instagram.com/28081284084c11e387e522000a1fbae1_7.jpg');"></div>
+    </div>
+    <div class="section-content">
+        <div class="jumbotron jumbotron-transparent white no-padding invisible" vertical-center>
+            <h1 class="title no-margin">contact</h1>
+        </div>
+    </div>
+</div>
+
+<div class="post text-center">
+    <div class="inline-block">
+        <h4 class="no-margin">Let's Get In Touch</h4>
+
+        <fieldset class="text-hr">
+            <legend><h4>on</h4></legend>
+        </fieldset>
+
+        <div class="icons fa-lg">
+            <a title="Twitter" href="http://www.twitter.com/antonshevko"><i class="fa fa-twitter"></i></a>
+            <a title="LinkedIn" href="http://www.linkedin.com/in/antonshev"><i class="fa fa-linkedin"></i></a>
+            <a title="GitHub" href="https://github.com/antonshevchenko"><i class="fa fa-github"></i></a>
+            <a title="Email" href="mailto:antonshevchenko@icloud.com"><i class="fa fa-envelope"></i></a>
+        </div>
+    </div>
 </div>
