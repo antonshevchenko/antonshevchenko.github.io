@@ -29,6 +29,10 @@
     }
 }
 
+.section-link {
+    &:extend(.margin-right);
+}
+
 @media (max-width: 767px) {
     .section {
         height: auto;
@@ -36,5 +40,9 @@
         .jumbotron {
             position: static !important;
         }
+    }
+
+    .section-link {
+        display: block;
     }
 }
