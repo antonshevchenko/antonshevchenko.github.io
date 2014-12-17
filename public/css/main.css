@@ -7871,6 +7871,9 @@ a.block {
   .section .jumbotron {
     position: static !important;
   }
+  .section-link {
+    display: block;
+  }
 }
 .no-margin {
   margin: 0 !important;
@@ -7878,7 +7881,8 @@ a.block {
 .margin-top {
   margin-top: 20px;
 }
-.margin-right {
+.margin-right,
+.section-link {
   margin-right: 20px;
 }
 .margin-bottom {
