@@ -7557,12 +7557,21 @@ u {
 .background.background-80 {
   background-position: center 80%;
 }
+.background.background-static {
+  position: static;
+  height: 100px;
+  margin-bottom: 30px;
+}
 .background-container {
   height: 200px;
   margin-top: -20px;
   margin-bottom: 40px;
 }
 @media (max-width: 767px) {
+  .background.background-static {
+    height: 50px;
+    margin-bottom: 20px;
+  }
   .background-container {
     height: 60px;
     margin-top: 0;
@@ -7608,6 +7617,15 @@ u {
   font-size: inherit;
   padding: 5px 10px;
   border: 2px solid;
+}
+.post header.header-thin {
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  letter-spacing: 3px;
+}
+.post img {
+  width: 100%;
 }
 .post ul li a {
   border-bottom: 0;
@@ -7791,6 +7809,11 @@ pre {
 }
 pre code.hljs {
   padding: 9.5px;
+}
+code {
+  color: initial;
+  font-size: initial;
+  background-color: #eee;
 }
 .nyancat {
   position: absolute;
