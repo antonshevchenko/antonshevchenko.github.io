@@ -27,6 +27,12 @@
     &.background-80 {
         background-position: center 80%;
     }
+
+    &.background-static {
+        position: static;
+        height: 100px;
+        margin-bottom: 30px;
+    }
 }
 
 .background-container {
@@ -37,6 +43,13 @@
 
 @media (max-width: 767px) {
     @margin: 20px;
+
+    .background {
+        &.background-static {
+            height: 50px;
+            margin-bottom: @margin;
+        }
+    }
 
     .background-container {
         height: 60px;
