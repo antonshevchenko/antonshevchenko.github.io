@@ -14,6 +14,11 @@ function init() {
     $(window).resize(function(){
         verticalCenter();
     });
+
+    // Fade
+    setTimeout(function () {
+        fade();
+    }, 2000);
 }
 
 function activePage() {
@@ -44,6 +49,11 @@ function navbarInvert() {
     if (invert.length) {
         $('nav').addClass('navbar-invert');
     }
+}
+
+function fade() {
+    console.log($('[fade]'));
+    $('[fade]').fadeTo(400, 0);
 }
 
 $(document).ready(init());
