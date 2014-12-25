@@ -7807,6 +7807,11 @@ pre {
 pre code.hljs {
   padding: 9.5px;
 }
+code {
+  color: initial;
+  font-size: initial;
+  background-color: #eee;
+}
 .nyancat {
   position: absolute;
   width: 800px;
