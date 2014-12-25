@@ -10,7 +10,7 @@ layout: default
 <div>
     {% for post in site.posts limit: 10 %}
     <article class="post">
-        <div class="background background-static margin-bottom" style="background-image: url('{{ post.cover }}')"></div>
+        <div class="background background-static" style="background-image: url('{{ post.cover }}')"></div>
         <header>
             <a title="{{ post.title }}" href="{{ post.url }}" class="header-mobile">{{ post.title }}</a>
         </header>
