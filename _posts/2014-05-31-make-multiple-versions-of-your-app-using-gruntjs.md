@@ -1,6 +1,7 @@
 ---
 title: Make Multiple Versions of Your App with Grunt
 cover: http://distilleryimage3.ak.instagram.com/a9f01810fdf611e2bdcf22000a1fbe62_7.jpg
+description: Use GruntJS to create multiple versions of your project.
 layout: post
 tags: [grunt, gruntjs, web, tutorial]
 ---
