@@ -7774,6 +7774,9 @@ u {
   line-height: 1.2em;
   letter-spacing: 3px;
 }
+.post img {
+  width: 100%;
+}
 .post ul li a {
   border-bottom: 0;
 }
