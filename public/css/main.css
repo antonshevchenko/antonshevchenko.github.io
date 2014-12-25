@@ -7768,6 +7768,12 @@ u {
   padding: 5px 10px;
   border: 2px solid;
 }
+.post header.header-thin {
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  letter-spacing: 3px;
+}
 .post ul li a {
   border-bottom: 0;
 }
