@@ -2,10 +2,20 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Anton Shevchenko's space on the web.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="{{ page.description }}">
     <meta name="keywords" content="anton, shevchenko, software engineer, web developer, uwaterloo, ionic">
     <meta name="author" content="Anton Shevchenko">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@antonshevko">
+    <meta name="twitter:creator" content="@antonshevko">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="twitter:image:src" content="{{ page.cover }}">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="{{ page.title }}">
+    <meta name="og:image" content="{{ page.cover }}">
+    <meta name="og:url" content="{{ site.url | append: page.url }}">
     <title>{{ page.title }}</title>
     <link href="/public/css/main.css" rel="stylesheet">
 </head>

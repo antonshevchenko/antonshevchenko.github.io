@@ -1,6 +1,7 @@
 ---
 title: Building Native Looking Ionic Apps
 cover: http://photos-c.ak.instagram.com/hphotos-ak-xfp1/t51.2885-15/1515957_481759285277090_108579368_n.jpg
+description: Learn how to use Ionic framework's toolset to create native-looking mobile applications.
 layout: post
 tags: [ionic, framework, mobile, ios, android, cordova]
 ---

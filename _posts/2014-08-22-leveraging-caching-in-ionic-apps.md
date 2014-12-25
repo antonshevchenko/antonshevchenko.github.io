@@ -1,6 +1,7 @@
 ---
 title: Leveraging Caching In Ionic Apps
 cover: http://distilleryimage6.ak.instagram.com/9f9d13a6f5fc11e2b8f522000a1fbce9_7.jpg
+description: Improve the performance of your connected Ionic mobile apps by caching your resources and downloaded images.
 layout: post
 tags: [ionic, framework, mobile, ios, android, cordova]
 ---
