@@ -11196,7 +11196,6 @@ function navbarInvert() {
 }
 
 function fade() {
-    console.log($('[fade]'));
     $('[fade]').fadeTo(400, 0);
 }
 
