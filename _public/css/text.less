@@ -67,11 +67,19 @@ u {
     text-decoration: none;
 }
 
+p {
+    -webkit-font-smoothing: antialiased !important;
+}
+
 @media (max-width: 767px) {
     @text-title: 36px;
 
     .title {
         font-size: @text-title;
         line-height: 1.2em;
+    }
+
+    fieldset.text-hr {
+        height: 50px;
     }
 }
