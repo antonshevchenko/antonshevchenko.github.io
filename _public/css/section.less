@@ -5,6 +5,18 @@
         position: relative;
         height: inherit;
     }
+
+    .section-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: @color-overlay;
+    }
+
+    .col-section-image {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
 }
 
 .full-section {
@@ -25,6 +37,36 @@
     &.section-striped {
         .section:nth-of-type(odd) {
             background-color: @gray-lighter;
+        }
+    }
+}
+
+.section.section-highlight,
+.full-section.section-striped .section.section-highlight {
+    color: white;
+    background-color: @color-highlight;
+
+    background-size: cover;
+    background-position: center;
+
+    h4 {
+        font-weight: 500;
+    }
+
+    .details {
+        border: 0;
+        color: @color-highlight;
+        background-color: white;
+        font-weight: 500;
+    }
+
+    .section-link {
+        color: white;
+    }
+
+    .section-overlay {
+        .details {
+            color: initial;
         }
     }
 }
