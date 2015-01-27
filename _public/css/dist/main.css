@@ -7563,6 +7563,9 @@ p {
 .background.background-80 {
   background-position: center 80%;
 }
+.background.background-75 {
+  background-position: center 75%;
+}
 .background.background-static {
   position: static;
   height: 100px;
